@@ -1,0 +1,5 @@
+# 四号插件：把它插进 DSH 配置树。它要在三号插件开火之前上线（推荐排在
+# id: chaos-fixer-crasher 之后装载，崩溃延迟 1500ms 足够它先拆引信）。
+- insert:
+    - id: chaos-fixer-crash-fixer
+      name: dsh-chaos-fixer-crash-fixer
