@@ -1,0 +1,30 @@
+{
+  "name": "dsh-chaos-fixer-crash-fixer",
+  "version": "0.1.0",
+  "description": "Repairs dsh-chaos-fixer-crasher by disarming its exit trigger before it fires, keeping the four-plugin chaos chain stable. Warning: it only disarms this specific crash, not arbitrary uncaught exits. Joke plugin.",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V01d-Project/dsh-chaos-plugins.git",
+    "directory": "packages/dsh-chaos-fixer-crash-fixer"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "chaos"
+  ],
+  "license": "MIT"
+}
