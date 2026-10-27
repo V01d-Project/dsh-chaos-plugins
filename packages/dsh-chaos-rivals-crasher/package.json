@@ -1,0 +1,30 @@
+{
+  "name": "dsh-chaos-rivals-crasher",
+  "version": "0.1.0",
+  "description": "Detects codex or Claude Code on the machine and exits the DSH host with code 66. Warning: on machines with either tool, installing it alone causes a boot crash loop; pair it with dsh-chaos-crash-fixer or set DSH_CHAOS_MODE=log. Joke plugin, not affiliated with OpenAI or Anthropic.",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V01d-Project/dsh-chaos-plugins.git",
+    "directory": "packages/dsh-chaos-rivals-crasher"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "chaos"
+  ],
+  "license": "MIT"
+}
