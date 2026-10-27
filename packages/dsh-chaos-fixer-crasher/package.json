@@ -1,0 +1,30 @@
+{
+  "name": "dsh-chaos-fixer-crasher",
+  "version": "0.1.0",
+  "description": "Exits the DSH host with code 1 when the dsh-chaos-crash-fixer repair plugin is installed. Warning: it crashes DSH on boot while the repair plugin is present; install dsh-chaos-fixer-crash-fixer to disarm it. Joke plugin.",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V01d-Project/dsh-chaos-plugins.git",
+    "directory": "packages/dsh-chaos-fixer-crasher"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "chaos"
+  ],
+  "license": "MIT"
+}
