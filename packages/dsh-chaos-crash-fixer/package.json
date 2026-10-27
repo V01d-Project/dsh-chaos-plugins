@@ -1,0 +1,30 @@
+{
+  "name": "dsh-chaos-crash-fixer",
+  "version": "0.1.0",
+  "description": "Repairs dsh-chaos-rivals-crasher by disarming its exit trigger before it fires, so DSH survives when codex or Claude Code is detected. Warning: install it together with the crasher; it cannot revive a host that has already exited. Joke plugin.",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V01d-Project/dsh-chaos-plugins.git",
+    "directory": "packages/dsh-chaos-crash-fixer"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "chaos"
+  ],
+  "license": "MIT"
+}
