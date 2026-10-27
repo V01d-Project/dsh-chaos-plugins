@@ -1,0 +1,4 @@
+# 一号插件：把它插进 DSH 配置树。id 在同一个 profile 里必须唯一。
+- insert:
+    - id: chaos-rivals-crasher
+      name: dsh-chaos-rivals-crasher
