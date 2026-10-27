@@ -1,0 +1,5 @@
+# 三号插件：把它插进 DSH 配置树。它要看见二号插件，所以必须排在
+# id: chaos-crash-fixer 之后装载。
+- insert:
+    - id: chaos-fixer-crasher
+      name: dsh-chaos-fixer-crasher
