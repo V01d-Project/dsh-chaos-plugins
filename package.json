@@ -1,0 +1,9 @@
+{
+  "name": "dsh-chaos-plugins",
+  "private": true,
+  "description": "Four mutually recursive DSH plugins: crash on codex/Claude Code, repair the crash, crash on the repair, repair that crash. Joke project — see README.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT"
+}
