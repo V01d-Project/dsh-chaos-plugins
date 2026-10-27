@@ -1,0 +1,5 @@
+# 二号插件：把它插进 DSH 配置树。必须排在 id: chaos-fixer-crasher 之前装载，
+# 三号插件要在自己的 apply() 里「看见」二号插件。
+- insert:
+    - id: chaos-crash-fixer
+      name: dsh-chaos-crash-fixer
